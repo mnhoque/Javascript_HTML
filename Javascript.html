@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Javascript_Exercise
+    </title>
+
+</head>
+
+<body>
+
+
+    <label for="lname">Last name:</label>
+    <input name="searchTxt" type="text" maxlength="512" id="searchTxt" class="searchField" />
+    <input type="button" value="Click Here" onclick="myFunction()" /><br>
+
+    <div id="demo"></div><br>
+
+    <label for="lname">Enter a number :</label>
+    <input name="searchTxt" type="text" maxlength="512" id="search_Txt" class="searchField" />
+    <input type="button" value="Click" onclick="CheckMatch()" /><br>
+    <div id="demo1"></div><br>
+
+    <label for="lname">Enter a date of next christmas :</label>
+    <input name="searchTxt" type="text" placeholder="month/day/year" maxlength="512" id="date_Txt"
+        class="searchField" /><br>
+    <input type="button" value="Click for count" onclick="calculateDays()" />
+
+    <div id="show_days"></div><br>
+
+    <form id="myForm">
+        Enter a name: <input type="text" id="btnClick" name="fname"><br>
+        <input type="button" onclick="my_Function()" value="Submit form">
+    </form>
+    <div id="show_Text"></div><br>
+
+    <form id="my_Form">
+        First name: <input type="text" name="fNumber" id="f_Number"><br>
+        Last name: <input type="text" name="lname" id="l_Number"><br><br>
+        <input type="button" onclick="checkNearer()" value="Click to check">
+    </form>
+    <div id="show_Result"></div><br>
+    <form id="first_one" onsubmit="GuessingGame();return false">
+        <p>Please guess a number between 1 and 10</p>
+        <input type="number" id="guess" min="1" max="10">
+        <input type="submit" value="Make a guess" />
+        <p id="message"></p>
+    </form>
+
+</body>
+<script src="My.js"></script>
+
+</html>
